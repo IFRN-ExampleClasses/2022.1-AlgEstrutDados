@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="charl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-21 04:11:14 "/>
+        <attribute name="created" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA2LTIxOyIwMzowMzo0MyAiOzI0NDY="/>
+        <attribute name="edited" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA2LTIxOyIwNDoxMToxNCAiOzI7MjU1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="etapa1" type="Integer" array="False" size=""/>
+            <declare name="etapa2" type="Integer" array="False" size=""/>
+            <assign variable="etapa1" expression="85"/>
+            <assign variable="etapa2" expression="50"/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <assign variable="media" expression="(etapa1 + etapa2) / 2"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

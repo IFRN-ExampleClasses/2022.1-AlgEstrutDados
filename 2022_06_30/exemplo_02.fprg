@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="charl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-30 02:12:30 "/>
+        <attribute name="created" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA2LTMwOyIwMTo0NDo0NSAiOzI0NTE="/>
+        <attribute name="edited" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA2LTMwOyIwMjoxMjozMCAiOzI7MjU1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do raio:&quot;" newline="True"/>
+            <input variable="raio"/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="3.14*raio*raio"/>
+            <output expression="&quot;A &#225;rea do c&#237;rculo &#233; &quot; &amp;area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
