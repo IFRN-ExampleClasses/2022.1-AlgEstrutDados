@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="charl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-12 03:50:07 "/>
+        <attribute name="created" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA2LTMwOyIwMToxMDo0OSAiOzI0NDg="/>
+        <attribute name="edited" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA3LTEyOyIwMzo1MDowNyAiOzg7MjU2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="etapa1" type="Integer" array="False" size=""/>
+            <declare name="etapa2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a nota da ETAPA 1:&quot;" newline="True"/>
+            <input variable="etapa1"/>
+            <output expression="&quot;Digite a nota da ETAPA 2:&quot;" newline="True"/>
+            <input variable="etapa2"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(etapa1*2 + etapa2*3)/ 5"/>
+            <output expression="&quot;Media Final = &quot; &amp;media" newline="True"/>
+            <if expression="media &gt;= 60">
+                <then>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &gt;= 20">
+                        <then>
+                            <output expression="&quot;Prova Final&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
