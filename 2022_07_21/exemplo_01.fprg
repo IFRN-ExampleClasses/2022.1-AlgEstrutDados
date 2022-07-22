@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="charl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-21 01:52:26 "/>
+        <attribute name="created" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA3LTIxOyIwMTo0MjoxOSAiOzI0NTE="/>
+        <attribute name="edited" value="Y2hhcmw7REFSVEhWQURFUjsyMDIyLTA3LTIxOyIwMTo1MjoyNiAiOzE7MjU1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="v1" type="Integer" array="False" size=""/>
+            <declare name="v2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o valor de V1:&quot;" newline="True"/>
+            <input variable="v1"/>
+            <output expression="&quot;Informe o valor de V2:&quot;" newline="True"/>
+            <input variable="v2"/>
+            <if expression="v1 &lt; v2">
+                <then>
+                    <declare name="x" type="Integer" array="False" size=""/>
+                    <for variable="x" start="v1" end="v2" direction="inc" step="1">
+                        <if expression="x % 2 == 0">
+                            <then>
+                                <output expression="x" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="&quot;Fim do La&#231;o de Repeti&#231;&#227;o&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;V1 deve ser menor do que V2&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
